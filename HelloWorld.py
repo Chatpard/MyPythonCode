@@ -15,4 +15,5 @@ with open(file="text.txt", mode="a") as f:
         f.write("\n")
 print("This is the result.")
 with open(file="text.txt", mode="r") as f:
-    print(f.read())
+    for line in f:
+        print(line.strip())
